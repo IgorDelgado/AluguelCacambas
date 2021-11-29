@@ -13,7 +13,11 @@ namespace Aluguel.Models.Dominio
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Display(Name = "ID")]
         public int ID { get; set; }
+
+        [Display(Name = "Litragem Caçamba")]
         public string Tamanho { get; set; }
+
+        [Display(Name = "Código Caçamba")] 
         public string Codigo { get; set; }
         public string Observacao { get; set; }
     }

@@ -16,7 +16,7 @@ namespace Aluguel.Models.Dominio
         public int ID { get; set; }
         [StringLength(35, ErrorMessage = "Tamanho de nome proprietario inválido", MinimumLength = 5)]
         [Required(ErrorMessage = "Campo Nome Proprietário é obrigatório")]
-        [Display(Name = "Nome")]
+        [Display(Name = "Nome Cliente")]
         public string NomeCliente { get; set; }
 
         [StringLength(25, ErrorMessage = "Tamanho de nome do bairro inválido - 25")]

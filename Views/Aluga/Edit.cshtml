@@ -14,11 +14,7 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
-            <div class="form-group">
-                <label asp-for="ClienteID" class="control-label"></label>
-                <select asp-for="ClienteID" class="form-control" asp-items="ViewBag.ClienteID"></select>
-                <span asp-validation-for="ClienteID" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="NomeCliente" class="control-label"></label>
                 <input asp-for="NomeCliente" class="form-control" />
@@ -70,15 +66,16 @@
                 <span asp-validation-for="NomeColaborador" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-confirma" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="form-group">
+    <input type="button" value="back" asp-action="Index" class="btn btn-confirma" />
 </div>
+   
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

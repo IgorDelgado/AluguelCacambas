@@ -20,7 +20,7 @@ namespace Aluguel.Models.Dominio
 
         [StringLength(35, ErrorMessage = "Tamanho de Função inválido", MinimumLength = 5)]
         [Required(ErrorMessage = "Campo Funcão é obrigatório")]
-        [Display(Name = "função")]
+        [Display(Name = "Função")]
         public string Funcao { get; set; }
 
         public ICollection<Aluga> Alugueis { get; set; }

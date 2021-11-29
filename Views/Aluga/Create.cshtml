@@ -5,9 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
 
-<h4>Aluga</h4>
+
+<h4>Cadastrar Aluguel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -29,11 +29,7 @@
                 <input asp-for="Codigo" class="form-control" />
                 <span asp-validation-for="Codigo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Observacao" class="control-label"></label>
-                <input asp-for="Observacao" class="form-control" />
-                <span asp-validation-for="Observacao" class="text-danger"></span>
-            </div>
+           
             <div class="form-group">
                 <label asp-for="Data_aluguel" class="control-label"></label>
                 <input asp-for="Data_aluguel" class="form-control" />
@@ -65,7 +61,7 @@
                 <span asp-validation-for="NomeColaborador" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-aluga" />
             </div>
         </form>
     </div>

@@ -14,7 +14,7 @@ namespace Aluguel.Models.Dominio
         [Display(Name = "ID")]
         public int ID { get; set; }
 
-        public int ClienteID { get; set; }
+     
         public string NomeCliente { get; set; }
         public string Tamanho { get; set; }
         public string Codigo { get; set; }
