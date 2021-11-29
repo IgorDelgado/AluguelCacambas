@@ -34,7 +34,7 @@ namespace Aluguel.Controllers
                 {
                     NomeColaborador = grupo.Key.NomeColaborador,
                     CodigoCacamba = grupo.Key.Codigo,
-                    QtdAluga = grupo.Count()
+                    
 
 
                 };

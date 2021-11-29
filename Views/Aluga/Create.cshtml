@@ -7,69 +7,124 @@
 
 
 
+
+
+
+
 <h4>Cadastrar Aluguel</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="Create">
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            <div class="form-group">
-                <label asp-for="NomeCliente" class="control-label"></label>
-                <input asp-for="NomeCliente" class="form-control" />
-                <span asp-validation-for="NomeCliente" class="text-danger"></span>
+
+            <div class="card">
+                <div class="card-header">
+                    Colaborador
+                </div>
+                <div class="card-body">
+
+                    <div class="form-group">
+                        <label asp-for="NomeColaborador" class="control-label"></label>
+                        <input asp-for="NomeColaborador" class="form-control" />
+                        <span asp-validation-for="NomeColaborador" class="text-danger"></span>
+                    </div>
+
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Tamanho" class="control-label"></label>
-                <input asp-for="Tamanho" class="form-control" />
-                <span asp-validation-for="Tamanho" class="text-danger"></span>
+
+            <div class="card">
+                <div class="card-header">
+                    Dados Clientes
+                </div>
+                <div class="card-body">
+
+                    <div class="form-group row">
+                        <div class="col-md-8">
+                            <label asp-for="NomeCliente" class="control-label "></label>
+                            <input asp-for="NomeCliente" class="form-control " />
+                            <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label asp-for="Endereco" class="control-label"></label>
+                            <input asp-for="Endereco" class="form-control" />
+                            <span asp-validation-for="Endereco" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2">
+                            <label asp-for="Bairro" class="control-label"></label>
+                            <input asp-for="Bairro" class="form-control" />
+                            <span asp-validation-for="Bairro" class="text-danger"></span>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Codigo" class="control-label"></label>
-                <input asp-for="Codigo" class="form-control" />
-                <span asp-validation-for="Codigo" class="text-danger"></span>
-            </div>
-           
-            <div class="form-group">
-                <label asp-for="Data_aluguel" class="control-label"></label>
-                <input asp-for="Data_aluguel" class="form-control" />
-                <span asp-validation-for="Data_aluguel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Endereco" class="control-label"></label>
-                <input asp-for="Endereco" class="form-control" />
-                <span asp-validation-for="Endereco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Bairro" class="control-label"></label>
-                <input asp-for="Bairro" class="form-control" />
-                <span asp-validation-for="Bairro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Data_devolucao" class="control-label"></label>
-                <input asp-for="Data_devolucao" class="form-control" />
-                <span asp-validation-for="Data_devolucao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Valor" class="control-label"></label>
-                <input asp-for="Valor" class="form-control" />
-                <span asp-validation-for="Valor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NomeColaborador" class="control-label"></label>
-                <input asp-for="NomeColaborador" class="form-control" />
-                <span asp-validation-for="NomeColaborador" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-aluga" />
-            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Caçamba
+                </div>
+                <div class="card-body">
+
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <label asp-for="Codigo" class="control-label"></label>
+                            <input asp-for="Codigo" class="form-control" />
+                            <span asp-validation-for="Codigo" class="text-danger"></span>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <label asp-for="Tamanho" class="control-label"></label>
+                            <input asp-for="Tamanho" class="form-control " />
+                            <span asp-validation-for="Tamanho" class="text-danger"></span>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    Aluguel
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <label asp-for="Data_aluguel" class="control-label"></label>
+                                <input asp-for="Data_aluguel" class="form-control" />
+                                <span asp-validation-for="Data_aluguel" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <label asp-for="Data_devolucao" class="control-label"></label>
+                                <input asp-for="Data_devolucao" class="form-control" />
+                                <span asp-validation-for="Data_devolucao" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label asp-for="Valor" class="control-label"></label>
+                                <input asp-for="Valor" class="form-control" />
+                                <span asp-validation-for="Valor" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Salvar" class="btn btn-aluga" />
+                    </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

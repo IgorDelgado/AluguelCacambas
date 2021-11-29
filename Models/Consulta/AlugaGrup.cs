@@ -16,6 +16,8 @@ namespace Aluguel.Models.Consulta
         public DateTime Data_aluguel { get; set; }
         public DateTime Data_devolucao { get; set; }
 
-        public int QtdAluga { get; set; }
+       
+
+        
     }
 }

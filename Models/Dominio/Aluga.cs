@@ -14,7 +14,7 @@ namespace Aluguel.Models.Dominio
         [Display(Name = "ID")]
         public int ID { get; set; }
 
-     
+        [Display(Name = "Nome Cliente")]
         public string NomeCliente { get; set; }
         public string Tamanho { get; set; }
         public string Codigo { get; set; }
@@ -25,9 +25,11 @@ namespace Aluguel.Models.Dominio
 
         public DateTime Data_devolucao { get; set; }
         public float Valor { get; set; }
+
+        [Display(Name = "Nome Colaborador")]
         public  string NomeColaborador { get; set; }
         
-        public string Cacamba { get; }        
-
+        public string Cacamba { get; set; }
+       
     }
 }
