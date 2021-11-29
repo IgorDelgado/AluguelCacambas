@@ -16,9 +16,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.NomeColaborador)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cacamba)
-            </th>
+            
             <th>
                 @Html.DisplayNameFor(model => model.CodigoCacamba)
             </th>
@@ -37,9 +35,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NomeColaborador)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cacamba)
-            </td>
+           
             <td>
                 @Html.DisplayFor(modelItem => item.CodigoCacamba)
             </td>
@@ -49,11 +45,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Data_devolucao)
             </td>
-            <td>
-                <a  class="btn btn-edit"asp-action="Edit" asp-route-id="@item.ID">Editat</a> |
-                
-                <a  class="btn btn-deletar" asp-action="Delete" asp-route-id="@item.ID">Deletar</a>
-            </td>
+          
         </tr>
 }
     </tbody>
