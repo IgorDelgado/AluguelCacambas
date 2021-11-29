@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aluguel.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20211129021607_autorizacoes")]
-    partial class autorizacoes
+    [Migration("20211129135508_correcaoClasseClientev2")]
+    partial class correcaoClasseClientev2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -173,10 +173,6 @@ namespace Aluguel.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CPF")
-                        .HasMaxLength(14)
-                        .HasColumnType("nvarchar(14)");
-
                     b.Property<string>("Contato")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -199,6 +195,9 @@ namespace Aluguel.Migrations
                         .IsRequired()
                         .HasMaxLength(35)
                         .HasColumnType("nvarchar(35)");
+
+                    b.Property<string>("cpf")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 

@@ -2,7 +2,7 @@
 
 namespace Aluguel.Migrations
 {
-    public partial class autorizacoes : Migration
+    public partial class Ialteracaoclassecliente : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

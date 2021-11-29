@@ -19,9 +19,8 @@ namespace Aluguel.Models.Mapeamento
             builder.Property(p => p.Municipio).HasMaxLength(25).IsRequired();
            
             builder.Property(p => p.Email).HasMaxLength(35).IsRequired();
-            builder.Property(p => p.CPF).HasMaxLength(14).IsRequired();
-            builder.HasIndex(p => p.CPF).IsUnique();
-
+            
+           
 
             builder.ToTable("Clientes");
         }

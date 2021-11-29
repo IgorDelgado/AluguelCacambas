@@ -7,14 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Aluguel.Models;
 using Aluguel.Models.Dominio;
-using Microsoft.AspNetCore.Authorization;
 
 namespace Aluguel.Controllers
 {
-
-    
-
-
     public class ClientesController : Controller
     {
         private readonly Contexto _context;
@@ -59,7 +54,7 @@ namespace Aluguel.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,NomeCliente,Endereco,Municipio,Email,CPF,Contato")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("ID,NomeCliente,Endereco,Municipio,Email,cpf,Contato")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +86,7 @@ namespace Aluguel.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,NomeCliente,Endereco,Municipio,Email,CPF,Contato")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,NomeCliente,Endereco,Municipio,Email,cpf,Contato")] Cliente cliente)
         {
             if (id != cliente.ID)
             {

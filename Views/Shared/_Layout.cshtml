@@ -21,9 +21,9 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ALUGA" asp-action="Create">ALUGAR</a>
                         </li>
-                          <li>
+                        <li>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -47,7 +47,7 @@
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                             <li><a class="dropdown-item" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
-                                            <li><a class="dropdown-item" asp-area="" asp-controller="Alugueis" asp-action="Index">Alugar</a></li>
+                                            <li><a class="dropdown-item" asp-area="" asp-controller="Aluga" asp-action="Index">Alugueis</a></li>
                                             <li><a class="dropdown-item" asp-area="" asp-controller="Cacambas" asp-action="Index">Caçambas</a></li>
                                             <li><a class="dropdown-item" asp-area="" asp-controller="Colaboradores" asp-action="Index">Colaboradores</a></li>
 
@@ -60,7 +60,7 @@
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                             <li><a class="dropdown-item" asp-area="" asp-controller="Alugueis" asp-action="ListarItensAluga">Lista de Alugueis</a></li>
-                                            
+
                                         </ul>
                                     </li>
 
@@ -68,6 +68,7 @@
                             </div>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
 
             </div>

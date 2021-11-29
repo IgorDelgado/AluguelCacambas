@@ -36,10 +36,7 @@ namespace Aluguel.Models.Dominio
         public string Email { get; set; }
 
         [Display(Name = "CPF")]
-        [StringLength(14, ErrorMessage = "Não aceita CPF com mais de 14 dígitos")]
-        [Remote("ValidarCPF", "Cliente", ErrorMessage = "CPF Inválido!!!")]
-        public string CPF { get; set; }
-
+              public string cpf { get; set; }
 
         [Display(Name = "Contato")]
         [Required(ErrorMessage = "Contato é obrigatório")]
